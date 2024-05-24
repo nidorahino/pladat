@@ -1,0 +1,49 @@
+#basicInfo-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+#basicInfo-page-wrapper .sk-cube-grid {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 40%;
+}
+
+#basicInfo-header-container {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 10%;
+}
+
+#basicInfo-header {
+    color: #d3d3d3;
+    font-weight: 300;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#basicInfo-header span {
+    color: #00a68a;
+}
+
+#basicInfo-primary-wrapper {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* align-content: center;
+    justify-content: center; */
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}

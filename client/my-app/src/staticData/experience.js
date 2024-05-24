@@ -1,0 +1,28 @@
+export const experienceArr = [
+	"Machine Learning",
+	"Backend",
+	"Frontend",
+	"Full Stack",
+	"Data Science",
+	"Mobile",
+	"UI/UX Design",
+	"Systems",
+	"Testing",
+	"Product Management",
+"Business",
+"Hardware",
+"Networking",
+"Product Design",
+"Finance",
+"Security",
+"Marketing",
+"Sales",
+"Trading",
+"Art",
+"Biotech",
+"Accounting",
+"Legal",
+"People & Ops",
+"Recruiting"
+];
+

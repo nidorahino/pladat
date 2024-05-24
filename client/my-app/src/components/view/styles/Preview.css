@@ -1,0 +1,28 @@
+#Preview-wrapper {
+    width: 100%;
+    height: 94%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#Preview-wrapper-innerContainer {
+    width: 75%;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    position: relative;
+}

@@ -1,0 +1,87 @@
+#four0fourWrapper {
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+
+    flex-direction: column;
+    z-index: 500 !important;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#fourfour-innerContainer {
+    height: 95%;
+    width: 80%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    z-index: 450;
+}
+.fourfourinnercut {
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-bottom: 5%;
+}
+.fourfourinnercut h1 {
+    margin-left: 0
+}
+#fourfourTitle, #fourfourSubtitle {
+    margin-left: 2%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #666666;
+}
+#fourfourTitle {
+    font-size: 9.5vw;
+    font-weight: 300;
+    color: #666666;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#fourfourTitle span , #fourfourSubtitle{
+    color: #00a68a;
+}
+#fourfourSubtitle {
+    font-size: 5.5vw;
+}
+#fourfourtypeholder {
+    margin-left: .5%;
+}
+
+#fourfourfooter {
+    position: absolute;
+    bottom: 4px;
+    align-self: center;
+}
+#fourfourfooter h2 {
+    font-weight: 300;
+    color: #666666;
+    font-size: 22px;
+}
+#fourfourfooter h2 span {
+    color: #00a68a;
+}
+#fourfourfooter a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+.fourfourfooterspec {
+    color: rgb(299, 299, 299) !important;
+}
+
+#fourfouranimesvgbox {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 400;
+}

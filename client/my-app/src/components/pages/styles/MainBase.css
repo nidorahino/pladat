@@ -1,0 +1,215 @@
+#MainWrapper {
+    width: 100% !important;
+    height: 100% !important;
+}
+.main-loader-div {
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    justify-items: center;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.main-loader-div h1 {
+    font-weight: 300;
+    color: #00a68a;
+}
+
+.grid-left-sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid #666666;
+}
+.grid-top-title {
+    grid-area: header;
+    border-bottom: 1px solid #666666;
+}
+.grid-center-main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.inner-gridWrapper {
+    width: 100% !important;
+    height: 100% !important;
+}
+.inner-gridContainer {
+    width: 100% !important;
+    height: 100% !important;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main main";
+    
+}
+
+.grid-left-sidebar .grid-left-nameHolder {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.grid-left-sidebar .grid-left-nameHolder a {
+    text-decoration: none;
+    outline: none;
+    color: #d3d3d3;
+}
+.grid-left-sidebar .grid-left-nameHolder .grid-left-nameHolder-nameLink{
+    margin-left: 3%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.grid-left-sidebar .grid-left-nameHolder h1{
+   font-weight: 300;
+    color: #d3d3d3;
+}
+.grid-left-sidebar .grid-left-nameHolder .grid-left-avatarGenerated{
+    border: 3px solid #00a68a;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    /* padding: 8.5px;
+    padding-top: 15px;
+    padding-bottom: 15px; */
+    border-radius: 50%;
+    
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.grid-left-nameHolder-avatarLink {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.grid-left-sidebar .grid-left-nameHolder .grid-left-avatarGenerated h4{
+    margin: 0;
+    color: #d3d3d3;
+}
+
+.grid-left-sidebar .grid-left-contentHolder {
+    height: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.grid-left-sidebar .grid-left-contentHolder .grid-left-editProfileTabs {
+    width: 96%;
+    padding-left: 3%;
+    padding-right: 1%;
+    height: 96%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.grid-left-sidebar .grid-left-contentHolder .grid-left-editProfileTabs span a {
+    text-decoration: none;
+    color: inherit;
+}
+.grid-left-sidebar .grid-left-contentHolder .grid-left-editProfileTabs span h3 {
+    font-weight: 300;
+    /* color: #d3d3d3; */
+    cursor: pointer;
+}
+.grid-left-editProfileTabSlotText {
+    color: #d3d3d3;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+}
+.grid-left-editProfileTabSlotText:hover {
+    color: #00a68a !important;
+    opacity: .5;
+}
+.grid-left-editProfileTabs span h3:hover {
+    color: #00a68a !important;
+    opacity: .5;
+}
+
+.grid-top-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.grid-top-title h1 {
+    color: #d3d3d3;
+    font-weight: 300;
+}
+.grid-top-title h1 .grid-top-title-headerEmphasis {
+    color: #00a68a !important;
+}
+
+.grid-left-avatarRealPic {
+    overflow: hidden !important;
+    border: 3px solid #00a68a;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    /* padding: 8.5px;
+    padding-top: 15px;
+    padding-bottom: 15px; */
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+.grid-left-avatarRealPic .avatar{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-clip: padding-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.grid-left-backToDiscoverBtn{
+    width: max-content;
+    height: 100% !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 1%;
+}
+.grid-left-backToDiscoverBtn svg{
+    transform: scale(1.5);
+}
+
+
+
+

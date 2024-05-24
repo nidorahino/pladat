@@ -1,0 +1,63 @@
+#register-on-success {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* padding-left: 2%;
+    padding-right: 2%;
+    line-height: 1.6; */
+}
+#register-on-success h1 {
+    font-size: 6.5vw;
+    /* font-size: 130px; */
+    font-weight: 300;
+    color: rgb(229, 229, 229); 
+    /* color: #d3d3d3; */
+    margin-top: 0; 
+}
+#register-on-success h1 span{
+    color: #00a68a;
+}
+
+#register-on-success-text {
+    color: #d3d3d3;
+    font-weight: 300;
+    font-size: 2.3em;
+}
+
+.register-on-success-text-info {
+    color: #00a68a !important;
+    font-weight: 400 !important;
+}
+
+#register-on-success-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.on-reg-success-time-comp {
+    color: #00a68a !important;
+    font-weight: 400;
+}
+
+#resendVerificationContainer {
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 840px) {
+
+    #register-on-success-text {
+        color: #d3d3d3;
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+
+}
+
+/* http://localhost:3000/registeration-first-step-complete/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImVtYWlsIjoid2lsbGlhbS5kYXJrbzEzQG15aHVudGVyLmN1bnkuZWR1IiwiZGF0ZUV4cHIiOiIyMDIwLTEwLTI4VDE5OjA2OjQ4Ljg0OVoiLCJkYXRlU2VudCI6IjIwMjAtMTAtMjdUMTk6MDY6NDkuMTQ1WiJ9LCJpYXQiOjE2MDM4MjU2MDksImV4cCI6MTYwMzkxMjAwOX0.Y9lVmpmpMHdCE52440CB7XZwf-e23LXQMy4cfsMl4G0 */

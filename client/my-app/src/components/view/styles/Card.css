@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500&display=swap');
+
+#topCard-wrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+#card-article-wrapper {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#card-carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.carousel-nav-btns {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    /* border: 1px solid; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    z-index: 700;
+}
+.carousel-nav-btnsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.carousel-nav-btn {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* align-items: center;
+    justify-items: center; */
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.carousel-nav-btn svg {
+    transform: scale(1.2);
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    right: 20%;
+}
+.carousel-nav-btn svg path {
+    stroke: #00a68a;
+    border-radius: 4px;
+}
+.carousel-nav-btns-north svg {
+    top: 20%;
+}
+.carousel-nav-btns-south svg {
+    bottom: 20%;
+}
+
+.card-carousel-slideList {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.card-carousel-slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    /* top: 0;
+    bottom: 0; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-clip: padding-box;
+    z-index: 500;
+    background-size: cover;
+}
+.carousel-noImg-slide {
+    background-image: url('https://i.ibb.co/cJfKMKR/light-paper-fibers-1.png');
+    background-blend-mode: overlay;
+    background-color: #00a68a; 
+}
+.carousel-slide1 {
+    top: 0;
+}
+.carousel-slide2 {
+    top: 200%;
+}
+.carousel-slide3 {
+    top: 300%;
+}
+.carousel-slide4 {
+    top: 400%;
+}
+
+.carousel-slideInfo {
+    position: relative;
+    height: 95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: auto;
+}
+
+.slide1-info {
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    font-family: Montserrat, sans-serif;
+    color: rgb(27, 27, 27);
+}
+.slide1-info h1 {
+    font-size: 42px;
+    font-weight: 300;
+    background-color: #00a68a;
+    width: min-content;
+    padding: 4px;
+    margin: 0;
+    border-radius: 4px;
+}
+.slide1-info h2 {
+    font-size: 24px;
+    font-weight: 300;
+    background-color: #00a68a;
+    width: max-content;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.carousel-user-slide2-info, .carousel-user-slide3-info, .carousel-user-slide4-info {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.carousel-user-slide2-info .carousel-info-container {
+    width: 80%;
+
+}
+.slide2-info  {
+    /* width: 60%-content; */
+    height: 60%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.slide2-info p {
+    font-family: Montserrat, sans-serif;
+    color: rgb(27, 27, 27);
+    /* width: min-content; */
+    background-color: #00a68a;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 42px;
+    margin: 0;
+}
+
+.slide3-info, .slide4-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.slide3-info-group, .slide-info-group {
+    border: 1px solid #00a68a;
+    padding: 16px;
+    border-radius: 4px;
+    /* width: max-content; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    display: inline;
+    margin-bottom: 14px;
+}
+.slide3-info-group h2 {
+    font-weight: 300;
+    font-family: Montserrat, sans-serif;
+    color: rgb(27, 27, 27);
+    width: max-content;
+    background-color: #00a68a;
+    padding: 4px;
+    margin: 0;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+.carousel-user-slide3-info  .carousel-info-container {
+    width: 80%;
+}
+
+.slide-group-item {
+    border: 1px solid #00a68a;
+    padding: 4px;
+    border-radius: 4px;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    background-image: url('https://i.ibb.co/cJfKMKR/light-paper-fibers-1.png');
+    background-blend-mode: overlay;
+    background-color: #00a68a;
+    width: max-content;
+    margin-right: 4px;
+}
+
+.slide4-info-group {
+    width: auto;
+    display: inline;
+}
+
+.slide4-info-group h2 {
+    font-weight: 300;
+    font-family: Montserrat, sans-serif;
+    color: rgb(27, 27, 27);
+    width: max-content;
+    background-color: #00a68a;
+    padding: 4px;
+    margin: 0;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.carousel-noImg-slide .slide-group-item {
+    background-image: none;
+}
+#top-btn-wrapper {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: -5%;
+    align-items: center;
+    justify-items: center;
+    /* border: 1px solid black; */
+    align-content: center;
+    justify-content: center;
+    z-index: 3700 !important;
+}
+.card-control {
+    /* position: relative; */
+    width: 64%;
+    bottom: -2%;
+    left: 18%;
+    right: 18%;
+    z-index: 3700 !important;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    overflow: visible !important;
+    align-self: center;
+}
+.absy {
+    position: relative !important;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: inherit !important;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.job-card-controlBtns-contaier {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    z-index: inherit;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.card-control-btn{
+    width: 75px !important;
+    height: 75px !important;
+    border: 1px solid #00a68a;
+    background-image: url('https://i.ibb.co/cJfKMKR/light-paper-fibers-1.png');
+    background-blend-mode: overlay;
+    background-color: #00a68a;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 4px;
+    border-radius: 50%;
+    z-index: inherit;
+    /* position: relative; */
+    cursor: pointer;
+}
+.card-like-controlBtn .nonBoxpath {
+    stroke: #d7696f;
+    fill: #d7696f;
+}
+.card-skip-controlBtn .nonBoxpath{
+    stroke: #00694e;
+    fill: #00694e;
+}
+.card-dislike-controlBtn .nonBoxpath{
+    stroke: #df454e;
+    fill: #df454e;
+}
+.card-dislike-controlBtn {
+}
+.card-dislike-controlBtn svg {
+    transform: scale(4);
+    z-index: inherit;
+}
+.card-skip-controlBtn  {
+    margin-top: -3%;
+}
+.card-skip-controlBtn  svg {
+    transform: scale(2.7);
+}
+.card-like-controlBtn svg {
+    transform: scale(2.7);
+}
+
+
+.job-slide1-info {
+    width: auto;
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+    font-family: Montserrat, sans-serif;
+    color: rgb(27, 27, 27);
+}
+.job-slide1-info #jobTitle {
+    font-size: 42px;
+    font-weight: 300;
+    background-color: #00a68a;
+    width: auto;
+    padding: 3px;
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #00a68a;
+}
+
+.job-slide1-info #nameAndType {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.job-slide1-info #nameAndType #cp{
+    margin-right: 8px;
+    border: 1px solid #00a68a;
+    padding: 2px;
+    height: min-content;
+    border-radius: 4px;
+    background-color: #00a680;
+}
+.job-slide1-info #nameAndType #cp h2{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.job-slide1-info #nameAndType #jt{
+    margin-right: 8px;
+    border: 1px solid #00a68a;
+    padding: 2px;
+    height: min-content;
+    border-radius: 4px;
+    background-color: #afdfd4;
+}
+.job-slide1-info #nameAndType #jt h2{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+.job-slide1-info #locas {
+    width: auto;
+    position: relative;
+    /* border: 1px solid #00694e; */
+    margin-top: 8px;
+    padding-left: 26px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: auto;
+
+}
+.job-slide1-info #locIcon {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    bottom: auto;
+}
+
+.job-slide1-info .jobSlide1-spanLoc {
+    border: 1px solid #00a680;
+    background: #00a680;
+    border-radius: 4px;
+    margin-right: 4px;
+    padding: 2px;
+}
+#numApps {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #afdfd4;
+    border-radius: 4px;
+    background: #afdfd4;
+    padding: 2px;
+}
+#numApps #pplLogo {
+    margin-right: 2px;
+}
+#numApps #pplLogo #pplIconpath, #locIconPath {
+    /* stroke: rgb(27, 27, 27); */
+    fill: rgb(27, 27, 27);
+}
+#numApps #appCount {
+    font-size: 12px;
+    color: rgb(27, 27, 27);
+}
+

@@ -1,0 +1,77 @@
+#verify-email-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+#verify-email-page-wrapper #main-card-view {
+    display: flex;
+    flex-direction: column;
+   
+    flex-wrap: wrap;
+    width: 75%;
+    height: 75%;
+    border: 1px solid #666666;
+    padding: 2%;
+    border-radius: 4px;
+    position: relative;
+}
+
+#main-card-header {
+    font-size: 6.5vw;
+    /* font-size: 130px; */
+    font-weight: 300;
+    color: rgb(229, 229, 229); 
+    /* color: #d3d3d3; */
+    margin-top: 0; 
+}
+#main-card-header span {
+    color: #00a68a;
+}
+
+#main-card-content-holder {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+#main-card-content0 h2{
+    color: #d3d3d3;
+    font-weight: 300;
+    font-size: 2.2vw;
+}
+#main-card-content0 h2 span {
+    color: #00a68a;
+}
+#main-card-content .card-content-text {
+    color: #d3d3d3;
+    font-weight: 300;
+    /* font-size: 1.4vw; 24px */
+    font-size: 2.2vw;
+}
+#main-card-content .card-content-text span {
+    color: #00a68a;
+}
+
+#success-login-link {
+    color: #d3d3d3;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+#success-login-link #success-login-link-text {
+    font-weight: 300;
+    font-size: 2.2vw;
+}
+#success-login-link span {
+    color: #00a68a;
+}
+
+.card-content-text-err {
+    color: #df454e;
+    font-weight: 300;
+}

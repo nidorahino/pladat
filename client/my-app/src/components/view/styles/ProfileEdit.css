@@ -1,0 +1,361 @@
+#ProfileEdit-wrapper {
+    width: 100%;
+    height: 95%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ProfileEdit-cut {
+    width: 70%;
+    /* border: 1px solid #666666; */
+    height: auto;
+}
+
+.ProfileEdit-imageContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33 33%;
+    /* grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main main main"; */
+    height: 415px;
+    width: 416px;
+    grid-gap: 1%;
+}
+.ProfileEdit-imgItem1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+.ProfileEdit-imgItem2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+.ProfileEdit-imgItem3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+.ProfileEdit-imgItem4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+.ProfileEdit-imgItem5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+.ProfileEdit-imgItem6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 1px solid #666666;
+    border-radius: 4px;
+}
+
+.ProfileEdit-img .ProfileEdit-addImgBtn {
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.ProfileEdit-img .ProfileEdit-addImgBtn svg{
+    transform: scale(2.5);
+}
+.ProfileEdit-img {
+    cursor: pointer;
+}
+.ProfileEdit-img-removeImgBtn {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    color: #df454e;
+}
+
+.ProfileEdit-addImgDialogue {
+    /* border: 1px solid #666666; */
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    padding: 12px 16px 14px;
+    width: 416px;
+    font-family: Montserrat, sans-serif;
+}
+.ProfileEdit-addImgDialogue #ProfileEdit-imgFileInput {
+    background-color: #00a68a;
+    color: rgb(27, 27, 27);
+    padding: 4px;
+    border-radius: 4px;
+    /* font-family: Montserrat, sans-serif; */
+    padding: 0;
+    cursor: pointer;
+}
+.ProfileEdit-addImgDialogue  #ProfileEdit-uploadImgBtn {
+    margin-left: 10px;
+    padding: 12px 16px 14px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #00a68a;
+    background-image: url('https://i.ibb.co/cJfKMKR/light-paper-fibers-1.png');
+    background-blend-mode: overlay;
+    background-color: #00a68a;
+    color: rgb(27, 27, 27);
+    font-weight: 300;
+    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+}
+
+.ProfileEdit-img-hasImg {
+    background-size: cover;
+    position: relative;
+    opacity: .8;
+}
+
+.ProfileEdit-previewProfileBtn {
+    width: 416px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1px solid #00a68a;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3%;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: url('https://i.ibb.co/cJfKMKR/light-paper-fibers-1.png');
+    background-blend-mode: overlay;
+    background-color: #00a68a;
+    color: rgb(27, 27, 27);
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+}
+.ProfileEdit-previewProfileBtn:hover {
+    opacity: .7;
+}
+
+.ProfileEdit-previewProfileBtn h2 {
+    font-weight: 300;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    color:rgb(27, 27, 27);
+}
+.ProfileEdit-previewProfileBtn  a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    outline: none;
+    color:rgb(27, 27, 27);
+    text-align: center;
+}
+.ProfileEdit-inputs {
+    width: 416px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+.ProfileEdit-inputsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ProfileEdit-input-group {
+    width: 100%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 0;
+    /* border: 1px solid #666666; */
+}
+.ProfileEdit-input-group input {
+    outline: none;
+    background: transparent;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 12px 16px 14px;
+    height: 22px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #d3d3d3;
+    font-weight: 300;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    width: 390px;
+}
+.ProfileEdit-input-group input::-webkit-calendar-picker-indicator {
+    color: #d3d3d3;
+    fill: #d3d3d3;
+    cursor: pointer;
+    outline: none;
+    background-color: #00a68a;
+    border-radius: 4px;
+}
+.ProfileEdit-input-group input:invalid::-webkit-datetime-edit {
+    color: #666666;
+}
+.ProfileEdit-input-group label {
+    margin-bottom: 4px;
+    color: #aeaeae;
+    font-size: 22px;
+}
+.ProfileEdit-choice-slot-container {
+    display: block;
+    margin-bottom: 4%;
+}
+.ProfileEdit-input-group textarea{
+    outline: none;
+    background: transparent;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 12px 16px 14px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #d3d3d3;
+    font-weight: 300;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    resize: none;
+    height: 170px;
+    width: 390px;
+}
+
+.ProfileEdit-choice-slot-container .ProfileEditChoiceSlot {
+    display: inline-block;
+    height: auto;
+    border: 1px solid #00a68a;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 12px;
+    margin-top: 12px;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    cursor: pointer;
+    color: #d3d3d3;
+    position: relative;
+    padding-right: 12px;
+}
+.ProfileEdit-choice-slot-container .ProfileEditChoiceSlot span {
+    position: absolute;
+    color: #df454e;
+    right: -2px;
+    top: -8px;
+    font-size: 14px;
+}
+
+.basicInfo-form-optionsBox {
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 12px 16px 14px;
+    height: auto;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #d3d3d3;
+    font-weight: 300;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    display: block;
+}
+.basicInfo-form-optionsBox .experienceSlot, .basicInfo-form-optionsBox .roleSlot{
+    display: inline-block;
+    height: auto;
+    border: 1px solid #00a68a;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    cursor: pointer;
+}
+
+.ProfileEdit-valuesOption:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+.ProfileEdit-choice-slot-container label {
+   font-size: 18px;
+}
+.ProfileEdit-valuesOption {
+    display: inline-block;
+    height: auto;
+    border: 1px solid #00a68a;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    cursor: pointer;
+}
+.ProfileEdit-valuesOption-type {
+    color: #d3d3d3;
+}
+.ProfileEdit-valuesField {
+    border: none;
+}
+
+.ProfileEdit-saveChangesBtn {
+    width: max-content;
+    padding: 8px;
+    border: 1px solid #00a68a;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3%;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: url('https://i.ibb.co/cJfKMKR/light-paper-fibers-1.png');
+    background-blend-mode: overlay;
+    background-color: #00a68a;
+    color: rgb(27, 27, 27);
+    transition: 125ms cubic-bezier(.25,.1,.25,1);
+    position: absolute;
+    bottom: 1%;
+    right: 7%;
+}
+.ProfileEdit-saveChangesBtn:hover {
+    opacity: .7;
+}
+
+.ProfileEdit-saveChangesBtn  h2 {
+    font-weight: 300;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    color:rgb(27, 27, 27);
+    font-size: 17px;
+}
